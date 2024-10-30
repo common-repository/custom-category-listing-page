@@ -1,0 +1,9 @@
+.edit-post-sidebar span.box-radio {
+    margin-right: 12px;
+    margin-top: 8px;
+    display: inline-block;
+}
+
+.edit-post-sidebar span.box-radio input {
+    margin-right: 8px;
+}

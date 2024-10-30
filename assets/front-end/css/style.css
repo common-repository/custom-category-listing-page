@@ -1,0 +1,220 @@
+.blog-post-sec {
+    background: #fff;
+    padding: 30px 0 30px;
+}
+
+.blog-post-sec .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.blog-left {
+    width: 100%;
+    padding-left: 0px;
+}
+
+.b-post {
+    width: 48%;
+    float: left;
+}
+
+.b-post:nth-child(2n) {
+    float: right;
+    width: 48%;
+}
+
+.blog-left .b-post img {
+    display: block;
+    width: 100%;
+}
+
+.b-post .blog-cont {
+    padding: 35px 40px;
+    width: 100%;
+    display: block;
+}
+
+.b-post .blog-cont h3 {
+    max-width: max-content;
+    border-bottom: 2px solid #000;
+    text-transform: capitalize;
+    margin: 0 auto 20px;
+    padding-bottom: 15px;
+    text-align: center;
+    transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+}
+
+.b-post .blog-cont h3 a {
+    color: #000;
+    text-decoration: none !important;
+    box-shadow: none;
+}
+
+.b-post:hover h3 a {
+    color: #0060ab;
+}
+
+.b-post:hover h3 {
+    border-color: #0060ab;
+}
+
+.b-post .blog-cont ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+}
+
+.b-post .blog-cont ul li {
+    margin-right: 10px;
+}
+
+.b-post .blog-cont ul li:last-child {
+    margin-right: 0;
+}
+
+.b-post .blog-cont ul li a {
+    background: #7f7f7f;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.b-post .blog-cont ul li a:hover {
+    background: #0060ab;
+}
+
+.blog-post-sec .pagination {
+    display: block;
+    width: 65%;
+    margin: 30px auto 0;
+    clear: both;
+}
+
+.blog-post-sec.pagination ul {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.pagination ul li a {
+    display: inline-block;
+    background: #fff;
+    color: #000;
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    border-bottom: 2px solid #b0b0b0;
+    text-align: center;
+    border-right: 1px solid #ebebeb;
+    border-left: 1px solid #ebebeb;
+    line-height: 45px!important;
+}
+
+.pagination ul li span {
+    display: inline-block;
+    background: #fff;
+    color: #000;
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    border-bottom: 2px solid #b0b0b0;
+    text-align: center;
+    border-right: 1px solid #ebebeb;
+    border-left: 1px solid #ebebeb;
+    line-height: 45px!important;
+}
+
+ul.page-numbers::after {
+    content: '';
+    display: table;
+}
+
+ul.page-numbers::before {
+    content: '';
+    display: table;
+}
+
+.pagination .page-numbers li .page-numbers,
+.woocommerce-pagination .page-numbers li .page-numbers {
+    border-left-width: 0;
+    display: inline-block;
+    padding: 0.3342343017em 0.875em;
+    background-color: rgba(0, 0, 0, 0.025);
+    color: #43454b;
+}
+
+.pagination,
+.woocommerce-pagination {
+    padding: 1em 0;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-width: 1px 0;
+    text-align: center;
+    clear: both;
+}
+
+.pagination .page-numbers li,
+.woocommerce-pagination .page-numbers li {
+    display: inline-block;
+}
+
+.pagination .page-numbers,
+.woocommerce-pagination .page-numbers {
+    list-style: none;
+    margin: 0;
+}
+
+.blog-post-sec .pagination ul li a.active,
+.blog-post-sec .pagination ul li a:hover {
+    background: #0060ab;
+    color: #fff;
+}
+
+.blog-post-sec .pagination ul li span.current {
+    background: #0060ab;
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    line-height: normal;
+    width: 45px;
+    height: 45px;
+    border-bottom: 2px solid #b0b0b0;
+    text-align: center;
+    border-right: 1px solid #ebebeb;
+    border-left: 1px solid #ebebeb;
+    line-height: 45px;
+}
+
+.pagination .page-numbers li .page-numbers {
+    padding: 0 !important;
+    text-decoration: none !important;
+}
+
+.pagination .page-numbers li a.page-numbers:hover {
+    background-color: rgba(0, 0, 0, .08);
+    color: #000;
+}
+
+@media only screen and (max-width: 767px) {
+    .pagination ul li span.current {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .read-more {
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+}
